@@ -3,8 +3,7 @@
 
 (https://virajpathak27.github.io/iks-digital-heritage-hub1/)
 [![Institution](https://img.shields.io/badge/Institution-VPKBIET_Baramati-0e3a2f?style=for-the-badge)](https://www.vpkbiet.org/)
-[![Curator](https://img.shields.io/badge/Architect_%26_Developer-Viraj_Pathak-c85a32?style=for-the-badge)](https://github.com/virajpathak27)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+(https://github.com/virajpathak27)
 
 ---
 
