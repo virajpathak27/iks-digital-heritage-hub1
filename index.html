@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1210">
+  <meta name="description" content="VPKBIET IKS Digital Heritage Hub — Showcasing Engineering and Multidisciplinary Student Research on Indian Knowledge Systems at Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology, Baramati.">
+  <meta name="author" content="Viraj Pathak">
+
+  <title>Indian Knowledge System (IKS) | VPKBIET Baramati — Digital Heritage Hub</title>
+
+  <!-- Favicon / Apple Touch Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✺</text></svg>">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- QRCode.js Library for Exhibition Labels -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Core Interactive Script -->
+  <script defer src="./assets/js/app.js"></script>
+</head>
+
+<body>
+  <!-- Ambient Particle Canvas for Floating Golden Dust -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+  <div class="bg-sanskrit-pattern" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar: VPKBIET Institutional Identity -->
+  <aside class="college-topbar" aria-label="Institutional Affiliation">
+    <div class="topbar-container">
+      <div class="college-badge">
+        <span class="om-emblem" aria-hidden="true">ॐ</span>
+        <span>Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology, Baramati · <strong>IKS Department</strong></span>
+      </div>
+      <div class="topbar-actions">
+        <button id="audio-toggle-btn" class="audio-toggle-btn" type="button" aria-label="Toggle ambient sitar tanpura drone audio">
+          <span aria-hidden="true">🎵</span>
+          <span>Ambient Sound</span>
+        </button>
+        <button id="lang-toggle-btn" class="lang-toggle-btn" type="button" aria-label="Switch between English and Marathi">
+          मराठी
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="#" class="brand-wrapper" aria-label="VPKBIET IKS Digital Heritage Hub Home">
+        <div class="brand-mandala" aria-hidden="true">
+          <!-- Traditional 8-petal Lotus Mandala Vector -->
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="50" cy="50" r="14" fill="currentColor"/>
+            <path d="M50 4 C55 24 64 36 84 50 C64 64 55 76 50 96 C45 76 36 64 16 50 C36 36 45 24 50 4 Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M17 17 C35 28 42 42 50 50 C42 58 35 72 17 83 C28 65 42 58 50 50 C42 42 28 35 17 17 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+            <path d="M83 17 C65 28 58 42 50 50 C58 58 65 72 83 83 C72 65 58 58 50 50 C58 42 72 35 83 17 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h2>VPKBIET IKS HUB</h2>
+          <p>Indian Knowledge System Cell</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#explore-projects" class="nav-link">Student Projects</a>
+        <a href="#about-institution" class="nav-link">About IKS Cell</a>
+        <a href="#map-section" class="nav-link">Heritage Map</a>
+        <button id="open-submit-modal-btn" class="submit-nav-btn" type="button">
+          <span aria-hidden="true">✦</span>
+          <span>Submit Project</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         HERO MASTHEAD: PRESERVING REQUESTED TEXT AND INTEGRATING INDIA'S MAP BEHIND
+         ====================================================================== -->
+    <section class="hero-masthead" id="map-section" aria-labelledby="hero-title-main">
+      <!-- Antique Ornamental Corner Flourishes -->
+      <svg class="hero-corner-decor top-left" viewBox="0 0 100 100" fill="none" stroke="var(--gold-primary)" stroke-width="2" aria-hidden="true">
+        <path d="M5 95 L5 20 A15 15 0 0 1 20 5 L95 5 M15 95 L15 25 A10 10 0 0 1 25 15 L95 15 M5 5 L35 35"/>
+        <circle cx="20" cy="20" r="4" fill="var(--gold-primary)"/>
+      </svg>
+      <svg class="hero-corner-decor top-right" viewBox="0 0 100 100" fill="none" stroke="var(--gold-primary)" stroke-width="2" aria-hidden="true">
+        <path d="M5 95 L5 20 A15 15 0 0 1 20 5 L95 5 M15 95 L15 25 A10 10 0 0 1 25 15 L95 15 M5 5 L35 35"/>
+        <circle cx="20" cy="20" r="4" fill="var(--gold-primary)"/>
+      </svg>
+      <svg class="hero-corner-decor bottom-left" viewBox="0 0 100 100" fill="none" stroke="var(--gold-primary)" stroke-width="2" aria-hidden="true">
+        <path d="M5 95 L5 20 A15 15 0 0 1 20 5 L95 5 M15 95 L15 25 A10 10 0 0 1 25 15 L95 15 M5 5 L35 35"/>
+        <circle cx="20" cy="20" r="4" fill="var(--gold-primary)"/>
+      </svg>
+      <svg class="hero-corner-decor bottom-right" viewBox="0 0 100 100" fill="none" stroke="var(--gold-primary)" stroke-width="2" aria-hidden="true">
+        <path d="M5 95 L5 20 A15 15 0 0 1 20 5 L95 5 M15 95 L15 25 A10 10 0 0 1 25 15 L95 15 M5 5 L35 35"/>
+        <circle cx="20" cy="20" r="4" fill="var(--gold-primary)"/>
+      </svg>
+
+      <!-- ====================================================================
+           DETAILED ANIMATED INDIA MAP SILHOUETTE BEHIND THE HERO TEXT
+           ==================================================================== -->
+      <div class="india-map-background" aria-hidden="true">
+        <svg class="india-svg-map" viewBox="0 0 800 950" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Metallic Gold Gradients for Land and Stroke -->
+            <radialGradient id="india-land-gradient" cx="50%" cy="50%" r="55%">
+              <stop offset="0%" stop-color="#1b382d" stop-opacity="0.85"/>
+              <stop offset="60%" stop-color="#12241d" stop-opacity="0.75"/>
+              <stop offset="100%" stop-color="#0a1511" stop-opacity="0.6"/>
+            </radialGradient>
+
+            <linearGradient id="gold-metallic-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#d4af37"/>
+              <stop offset="35%" stop-color="#fff4c2"/>
+              <stop offset="65%" stop-color="#b8860b"/>
+              <stop offset="100%" stop-color="#f38a1e"/>
+            </linearGradient>
+
+            <radialGradient id="seal-gold-grad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#fff8db"/>
+              <stop offset="50%" stop-color="#d4af37"/>
+              <stop offset="100%" stop-color="#8a6316"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Antique Meridian Navigation & Sacred Geometry Concentric Rings -->
+          <g opacity="0.22">
+            <circle cx="400" cy="480" r="390" fill="none" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="8 6"/>
+            <circle cx="400" cy="480" r="320" fill="none" stroke="#d4af37" stroke-width="0.8"/>
+            <circle cx="400" cy="480" r="230" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="400" y1="50" x2="400" y2="900" stroke="#d4af37" stroke-width="1" stroke-dasharray="4 8"/>
+            <line x1="50" y1="480" x2="750" y2="480" stroke="#d4af37" stroke-width="1" stroke-dasharray="4 8"/>
+          </g>
+
+          <!-- Authentic Comprehensive Vector Path of the Map of India -->
+          <!-- Covering Northern Kashmir/Ladakh, Western Gujarat, Deccan Peninsula, Bengal Delta & Northeast Assam -->
+          <path class="map-land" d="
+            M 315,35 
+            C 340,30 365,42 385,48 
+            C 405,52 425,75 440,95 
+            C 455,115 470,120 455,145 
+            C 440,165 420,175 425,195 
+            C 432,215 450,225 475,230 
+            C 505,235 535,245 550,230 
+            C 565,215 580,225 600,235 
+            C 625,245 660,250 685,260 
+            C 715,270 735,290 730,315 
+            C 725,335 695,340 680,360 
+            C 665,380 675,410 655,425 
+            C 635,435 605,420 590,440 
+            C 575,460 550,470 540,490 
+            C 530,510 520,540 515,570 
+            C 510,600 480,635 465,665 
+            C 450,695 435,730 420,765 
+            C 405,800 390,835 375,870 
+            C 365,885 355,870 345,845 
+            C 335,815 315,775 305,740 
+            C 295,705 285,665 275,625 
+            C 265,585 245,550 235,510 
+            C 225,475 205,455 175,450 
+            C 145,445 110,460 85,475 
+            C 70,485 55,465 70,445 
+            C 90,425 115,415 130,395 
+            C 145,370 140,340 160,315 
+            C 180,290 195,280 205,250 
+            C 215,220 220,190 235,160 
+            C 250,130 260,105 275,75 
+            C 290,50 300,40 315,35 Z
+          "/>
+
+          <!-- Andaman & Nicobar and Lakshadweep Island Archipelagos -->
+          <g class="map-islands" fill="url(#gold-metallic-stroke)" opacity="0.8">
+            <!-- Andaman & Nicobar (East) -->
+            <ellipse cx="640" cy="710" rx="6" ry="14"/>
+            <ellipse cx="645" cy="740" rx="5" ry="10"/>
+            <ellipse cx="650" cy="775" rx="5" ry="12"/>
+            <ellipse cx="655" cy="810" rx="4" ry="8"/>
+            <!-- Lakshadweep (West) -->
+            <ellipse cx="255" cy="760" rx="4" ry="7"/>
+            <ellipse cx="260" cy="785" rx="4" ry="8"/>
+            <ellipse cx="265" cy="815" rx="3" ry="6"/>
+          </g>
+
+          <!-- Internal Flowing Grid Lines (Historic River Networks & Latitudes) -->
+          <g class="map-internal-mesh">
+            <path d="M 235,160 Q 320,220 440,240 T 575,340"/>
+            <path d="M 130,395 Q 260,420 370,450 T 520,540"/>
+            <path d="M 235,510 Q 330,550 420,600 T 480,660"/>
+            <path d="M 285,665 Q 345,710 390,750 T 435,780"/>
+          </g>
+
+          <!-- Constellation Rays Connecting Knowledge Centers to VPKBIET Baramati -->
+          <g class="map-rays">
+            <!-- To Baramati (cx: 285, cy: 565) -->
+            <line class="map-ray-line" x1="265" y1="120" x2="285" y2="565"/> <!-- Takshashila to Baramati -->
+            <line class="map-ray-line" x1="495" y1="365" x2="285" y2="565"/> <!-- Nalanda to Baramati -->
+            <line class="map-ray-line" x1="315" y1="440" x2="285" y2="565"/> <!-- Ujjain to Baramati -->
+            <line class="map-ray-line" x1="145" y1="440" x2="285" y2="565"/> <!-- Dholavira to Baramati -->
+            <line class="map-ray-line" x1="375" y1="785" x2="285" y2="565"/> <!-- Thanjavur to Baramati -->
+          </g>
+
+          <!-- ==================================================================
+               INTERACTIVE KNOWLEDGE NODES ON INDIA MAP (WITH HOVER & PULSES)
+               ================================================================== -->
+          
+          <!-- 1. Takshashila (NW Ancient University) -->
+          <g class="map-hub-group" data-hub="takshashila" transform="translate(265, 120)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="8"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="4.5"/>
+            <text class="hub-label" x="12" y="4">Takshashila</text>
+          </g>
+
+          <!-- 2. Nalanda (Bihar - Mahavihara) -->
+          <g class="map-hub-group" data-hub="nalanda" transform="translate(495, 365)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="9"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="5"/>
+            <text class="hub-label" x="12" y="4">Nalanda</text>
+          </g>
+
+          <!-- 3. Ujjain (Madhya Pradesh - Prime Meridian of Astronomy) -->
+          <g class="map-hub-group" data-hub="ujjain" transform="translate(315, 440)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="8"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="4.5"/>
+            <text class="hub-label" x="12" y="4">Ujjain</text>
+          </g>
+
+          <!-- 4. VPKBIET Baramati (Maharashtra - Modern Student Engineering IKS Hub) -->
+          <g class="map-hub-group" data-hub="baramati" transform="translate(285, 565)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="14" stroke="#ff8c00" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="7" fill="#f38a1e" filter="drop-shadow(0 0 10px #ff8c00)"/>
+            <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+            <text class="hub-label" x="16" y="5" fill="#fbeea4" font-size="13" font-weight="800">★ VPKBIET (Baramati)</text>
+          </g>
+
+          <!-- 5. Dholavira & Lothal (Gujarat - Harappan Hydraulic Systems) -->
+          <g class="map-hub-group" data-hub="dholavira" transform="translate(145, 440)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="8"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="4.5"/>
+            <text class="hub-label" x="-85" y="4">Dholavira</text>
+          </g>
+
+          <!-- 6. Kashi (Varanasi - Philosophy, Sanskrit & Medicine) -->
+          <g class="map-hub-group" data-hub="kashi" transform="translate(445, 360)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="8"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="4.5"/>
+            <text class="hub-label" x="12" y="4">Kashi</text>
+          </g>
+
+          <!-- 7. Thanjavur (Tamil Nadu - Brihadeeswara Temple Acoustics & Chola Bronzes) -->
+          <g class="map-hub-group" data-hub="thanjavur" transform="translate(375, 785)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="8"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="4.5"/>
+            <text class="hub-label" x="14" y="4">Thanjavur</text>
+          </g>
+
+          <!-- 8. Kerala School (Sangamagrama - Calculus & Trigonometric Series) -->
+          <g class="map-hub-group" data-hub="kerala" transform="translate(325, 825)">
+            <circle class="hub-pulse-ring" cx="0" cy="0" r="8"/>
+            <circle class="hub-center-dot" cx="0" cy="0" r="4.5"/>
+            <text class="hub-label" x="-95" y="4">Kerala School</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- ====================================================================
+           FOREGROUND HERO CONTENT: EXACT REQUESTED TEXT
+           ==================================================================== -->
+      <div class="hero-content">
+        <div class="sacred-seal" aria-hidden="true">
+          <!-- Sacred Ashoka Chakra / Sudarshana Mandala Motif -->
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="3"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <circle cx="50" cy="50" r="12" fill="currentColor"/>
+            <!-- 24 Sacred Spokes -->
+            <g stroke="currentColor" stroke-width="1.8">
+              <line x1="50" y1="12" x2="50" y2="88"/>
+              <line x1="12" y1="50" x2="88" y2="50"/>
+              <line x1="23" y1="23" x2="77" y2="77"/>
+              <line x1="23" y1="77" x2="77" y2="23"/>
+              <line x1="36" y1="14" x2="64" y2="86"/>
+              <line x1="14" y1="36" x2="86" y2="64"/>
+              <line x1="64" y1="14" x2="36" y2="86"/>
+              <line x1="86" y1="36" x2="14" y2="64"/>
+              <line x1="28" y1="18" x2="72" y2="82"/>
+              <line x1="18" y1="28" x2="82" y2="72"/>
+              <line x1="72" y1="18" x2="28" y2="82"/>
+              <line x1="82" y1="28" x2="18" y2="72"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- EXACT TEXT 1 -->
+        <p class="heritage-kicker">A Heritage of Knowledge</p>
+
+        <!-- EXACT TEXT 2 -->
+        <h1 class="hero-title-main" id="hero-title-main">INDIAN KNOWLEDGE SYSTEM</h1>
+
+        <!-- EXACT TEXT 3 -->
+        <h2 class="hero-title-devanagari">भारतीय ज्ञान परंपरा</h2>
+
+        <!-- EXACT TEXT 4 -->
+        <p class="hero-tagline">Ancient wisdom · Living traditions · Future possibilities</p>
+
+        <!-- VPKBIET Department Attribution -->
+        <div class="hero-vpkbiet-tag">
+          <span aria-hidden="true">🏛️</span>
+          <span>VPKBIET Baramati · Official Student Research & Innovation Repository</span>
+        </div>
+
+        <div class="hero-cta-group hero-interactive-elements">
+          <a href="#explore-projects" class="btn-primary-gold">
+            <span>Explore Student Projects</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+          <button id="hero-submit-trigger" class="btn-secondary-outline" type="button" onclick="document.getElementById('open-submit-modal-btn').click()">
+            <span aria-hidden="true">✍</span>
+            <span>Submit Your Project</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Floating Tooltip Box for Map Nodes -->
+      <div class="map-node-tooltip" id="map-node-tooltip" aria-live="polite">
+        <h4 id="tooltip-hub-title">VPKBIET Baramati (IKS Cell)</h4>
+        <p id="tooltip-hub-desc">Hover over any glowing node across the map of India to discover its ancient scientific legacy and student engineering links.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHILOSOPHY & STATS STRIP
+         ====================================================================== -->
+    <section class="heritage-stats-strip" aria-label="Key Achievements and Overview">
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-icon" aria-hidden="true">📜</span>
+          <div class="stat-content">
+            <h3 id="projects-count-display">04</h3>
+            <p>Peer-Reviewed Projects</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-icon" aria-hidden="true">🔬</span>
+          <div class="stat-content">
+            <h3>06+</h3>
+            <p>Engineering Disciplines</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-icon" aria-hidden="true">👥</span>
+          <div class="stat-content">
+            <h3>14+</h3>
+            <p>Student Researchers</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-icon" aria-hidden="true">🏛️</span>
+          <div class="stat-content">
+            <h3>VPKBIET</h3>
+            <p>Vidyanagari Baramati</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         STUDENT PROJECTS SHOWCASE (DYNAMICALLY FILTERABLE & SEARCHABLE)
+         ====================================================================== -->
+    <section class="projects-section" id="explore-projects">
+      <header class="section-header">
+        <p class="section-kicker">Vidya Pratishthan Student Innovations</p>
+        <h2 class="section-title">Explore Student Projects</h2>
+        <p class="section-description">
+          Bridging ancient Indian treatises — from Harappan hydraulics and Vedic mathematics to Gupta metallurgy and Chola acoustics — with modern computational engineering, ANSYS simulations, and VLSI silicon design.
+        </p>
+      </header>
+
+      <!-- Search & Category Filtering Control Bar -->
+      <div class="projects-control-bar" role="search" aria-label="Project Filters">
+        <div class="filter-pills" role="tablist">
+          <button class="filter-pill active" data-category="all" type="button" role="tab" aria-selected="true">All Domains</button>
+          <button class="filter-pill" data-category="Water" type="button" role="tab">Water & Hydraulics</button>
+          <button class="filter-pill" data-category="Vedic Mathematics" type="button" role="tab">Vedic Maths & VLSI</button>
+          <button class="filter-pill" data-category="Metallurgy" type="button" role="tab">Metallurgy & Materials</button>
+          <button class="filter-pill" data-category="Architecture" type="button" role="tab">Architecture & Acoustics</button>
+        </div>
+
+        <div class="search-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input id="search-input" class="search-input" type="search" placeholder="Search projects, topics or students... (/)" aria-label="Search student projects">
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid" id="projects-grid" aria-live="polite">
+        <!-- Rendered dynamically by assets/js/app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state" style="display: none; text-align: center; padding: 60px 20px;">
+        <span style="font-size: 3rem; color: var(--gold-primary); display: block; margin-bottom: 16px;">⌕</span>
+        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 8px;">No projects found</h3>
+        <p style="color: var(--text-secondary);">Try adjusting your search keywords or select "All Domains".</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT VPKBIET IKS DEPARTMENT & CELL
+         ====================================================================== -->
+    <section class="institution-section" id="about-institution">
+      <div class="institution-grid">
+        <div class="institution-copy">
+          <p class="section-kicker">Bridging Past & Future</p>
+          <h2>VPKBIET Indian Knowledge System Department</h2>
+          <p>
+            The Indian Knowledge System (IKS) Cell at Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology, Baramati, was founded to ignite rigorous scientific inquiry into India’s vast civilizational wisdom.
+          </p>
+          <p>
+            Rather than passive admiration, our undergraduate and postgraduate students analyze classical Sanskrit and regional texts with modern engineering rigor — applying Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), scanning electron microscopy, and hardware description languages to validate and adapt traditional techniques for sustainable future technologies.
+          </p>
+          <ul class="features-list">
+            <li><span>✦</span> <strong>Empirical Validation:</strong> Replicating ancient technologies in certified modern engineering laboratories.</li>
+            <li><span>✦</span> <strong>Interdisciplinary Synergy:</strong> Collaboration between Civil, Mechanical, Computer, and VLSI departments.</li>
+            <li><span>✦</span> <strong>Open Digital Access:</strong> Every project features a dedicated QR code for conference and classroom exhibition.</li>
+          </ul>
+        </div>
+
+        <div class="institution-card">
+          <div style="font-size: 2.2rem; color: var(--gold-primary); margin-bottom: 12px;">ॐ</div>
+          <h3>विद्या ददाति विनयं विनयाद् याति पात्रताम्</h3>
+          <blockquote>
+            "Knowledge imparts humility, from humility comes capability, and from capability flows true prosperity for humanity."
+          </blockquote>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+            Every student project curated here is thoroughly documented with historical references, experimental methodology, high-resolution test photos, and open data for peer review.
+          </p>
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 0.82rem; color: var(--gold-light);">Vidyanagari, Baramati, Maharashtra</span>
+            <span style="font-size: 0.82rem; color: var(--text-muted);">AICTE / SPPU Affiliated</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       PROJECT DETAIL MODAL (HIGH-END INTERACTIVE POPUP WITH GALLERY & TABS)
+       ======================================================================== -->
+  <div id="project-detail-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog">
+      <button id="close-modal-btn" class="modal-close-btn" type="button" aria-label="Close project modal">&times;</button>
+
+      <!-- Image Carousel / Photo Showcase -->
+      <div class="modal-gallery-box">
+        <img id="modal-main-img" class="modal-main-image" src="" alt="Project Photo">
+        <div class="modal-image-caption-bar">
+          <p id="modal-img-caption">VPKBIET Student Research</p>
+          <div class="gallery-thumbs-row" id="modal-gallery-thumbs"></div>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <div class="modal-tags-row">
+          <span class="modal-type-tag" id="modal-project-type">Engineering</span>
+          <span class="modal-date-tag" id="modal-project-date">Created Date</span>
+        </div>
+
+        <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+
+        <!-- Tabs Navigation -->
+        <nav class="modal-tabs" aria-label="Project Details Tabs">
+          <button class="modal-tab-btn active" data-tab="overview" type="button">Overview & Abstract</button>
+          <button class="modal-tab-btn" data-tab="team" type="button">Team & Mentor</button>
+          <button class="modal-tab-btn" data-tab="qr" type="button">Exhibition QR & Citation</button>
+        </nav>
+
+        <!-- Tab 1: Overview & Research Info -->
+        <div class="modal-tab-pane active" id="tab-overview">
+          <h3 class="info-section-title"><span aria-hidden="true">📜</span> Project Abstract & Problem Statement</h3>
+          <p class="info-text-paragraph" id="modal-abstract-text"></p>
+
+          <!-- Key Metrics Grid -->
+          <div class="metrics-grid" id="modal-metrics-grid"></div>
+
+          <h3 class="info-section-title"><span aria-hidden="true">🏛️</span> Historical Indian Tradition & Reference</h3>
+          <p class="info-text-paragraph" id="modal-historical-text"></p>
+
+          <h3 class="info-section-title"><span aria-hidden="true">⚙️</span> Modern Engineering Methodology</h3>
+          <p class="info-text-paragraph" id="modal-methodology-text"></p>
+
+          <h3 class="info-section-title"><span aria-hidden="true">🎯</span> Key Findings & Future Impact</h3>
+          <p class="info-text-paragraph" id="modal-findings-text"></p>
+        </div>
+
+        <!-- Tab 2: Team Members -->
+        <div class="modal-tab-pane" id="tab-team">
+          <h3 class="info-section-title"><span aria-hidden="true">👥</span> Student Researchers & Faculty Guide</h3>
+          <p class="info-text-paragraph">Carried out under the guidance of the Department of Indian Knowledge Systems (IKS Cell), VPKBIET Baramati.</p>
+          <div class="team-cards-grid" id="modal-team-grid"></div>
+        </div>
+
+        <!-- Tab 3: QR Code & Exhibition Studio -->
+        <div class="modal-tab-pane" id="tab-qr">
+          <div class="qr-tab-content">
+            <div class="qr-box-container">
+              <div id="modal-qrcode-canvas"></div>
+              <div class="qr-box-label">SCAN TO EXPLORE ONLINE</div>
+            </div>
+            <div class="qr-actions-box">
+              <h3>Every project gets its own doorway.</h3>
+              <p>
+                Each project in the VPKBIET IKS repository has a permanent web identifier. Scan this code on any smartphone to open the interactive project report, or download and print it beside physical working models and conference posters.
+              </p>
+              <div class="qr-btns-row">
+                <button id="modal-download-qr-btn" class="btn-primary-gold" type="button">
+                  <span aria-hidden="true">📥</span> Download QR PNG
+                </button>
+                <button id="modal-print-qr-btn" class="btn-secondary-outline" type="button">
+                  <span aria-hidden="true">🖨️</span> Print Label
+                </button>
+                <button id="modal-copy-link-btn" class="btn-secondary-outline" type="button">
+                  <span aria-hidden="true">🔗</span> Copy Link
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       STUDENT PROJECT SUBMISSION MODAL
+       ======================================================================== -->
+  <div id="project-submit-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="submit-modal-heading">
+    <div class="modal-dialog" style="max-width: 650px;">
+      <button id="close-submit-modal-btn" class="modal-close-btn" type="button" aria-label="Close submit modal">&times;</button>
+      <div class="modal-body" style="padding-top: 32px;">
+        <p class="section-kicker">VPKBIET IKS Cell Submission</p>
+        <h2 id="submit-modal-heading" class="modal-title" style="font-size: 1.5rem; margin-bottom: 12px;">Submit Student Project</h2>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 24px;">
+          Have you conducted research correlating ancient Indian science with modern engineering? Submit your details to add your project to the official VPKBIET exhibition.
+        </p>
+
+        <form id="student-submit-form">
+          <div class="form-group">
+            <label for="submit-title">Project Title *</label>
+            <input id="submit-title" class="form-control" type="text" placeholder="e.g. Traditional Rainwater Harvesting in Sahyadri Forts" required>
+          </div>
+
+          <div class="form-group">
+            <label for="submit-type">Project Discipline / Domain *</label>
+            <select id="submit-type" class="form-control">
+              <option value="Water Heritage & Civil Engineering">Water Heritage & Civil Engineering</option>
+              <option value="Vedic Mathematics & VLSI Hardware">Vedic Mathematics & VLSI Hardware</option>
+              <option value="Metallurgy & Material Science">Metallurgy & Material Science</option>
+              <option value="Architecture & Acoustic Engineering">Architecture & Acoustic Engineering</option>
+              <option value="Ethno-Botany & Ayurvedic Formulations">Ethno-Botany & Ayurvedic Formulations</option>
+              <option value="Astronomy & Mechanical Instruments">Astronomy & Mechanical Instruments</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="submit-members">Team Members (Comma separated) *</label>
+            <input id="submit-members" class="form-control" type="text" placeholder="e.g. Viraj Pathak, Aditya Patil, Rohan Deshmukh" required>
+          </div>
+
+          <div class="form-group">
+            <label for="submit-abstract">Abstract & Scientific Methodology *</label>
+            <textarea id="submit-abstract" class="form-control" rows="4" placeholder="Describe the ancient Indian concept, modern engineering simulation or laboratory prototype, and experimental findings..." required></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 14px; margin-top: 24px;">
+            <button type="button" class="btn-secondary-outline" onclick="document.getElementById('close-submit-modal-btn').click()">Cancel</button>
+            <button type="submit" class="btn-primary-gold">Submit to IKS Registry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SITE FOOTER (FEATURING VIRAJ PATHAK & VPKBIET IKS DEPARTMENT)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top-pattern" aria-hidden="true"></div>
+
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>VPKBIET IKS HUB</h3>
+        <p>
+          Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology, Baramati. A dedicated digital living archive uniting ancient Indian scientific wisdom with modern multidisciplinary engineering.
+        </p>
+        <!-- Requested Author Attribution Banner -->
+        <div class="viraj-signature-badge">
+          <span aria-hidden="true">✦</span>
+          <span>Curated & Developed by Viraj Pathak</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#explore-projects">Student Projects</a></li>
+          <li><a href="#about-institution">About IKS Cell</a></li>
+          <li><a href="#map-section">Heritage Map of India</a></li>
+          <li><a href="#" onclick="document.getElementById('open-submit-modal-btn').click(); return false;">Submit Research</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Domains</h4>
+        <ul>
+          <li><a href="#explore-projects">Water & Stepwells</a></li>
+          <li><a href="#explore-projects">Vedic Mathematics</a></li>
+          <li><a href="#explore-projects">Ancient Metallurgy</a></li>
+          <li><a href="#explore-projects">Acoustic Architecture</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Institutional Cell</h4>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">
+          Vidyanagari, Bhigwan Road, Baramati, Dist. Pune, Maharashtra 413133.
+        </p>
+        <p style="font-size: 0.85rem; color: var(--gold-light);">
+          Affiliated to Savitribai Phule Pune University (SPPU) · NAAC 'A' Grade
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p class="footer-credits-text">
+        &copy; 2026 VPKBIET IKS Department · Vidya Pratishthan. All Rights Reserved.
+      </p>
+      <div class="viraj-signature-badge" style="background: transparent; border-color: rgba(212, 175, 55, 0.3);">
+        <small style="color: var(--text-gold);">Website Architect: <strong>viraj pathak</strong></small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,286 @@
+[
+  {
+    "id": "dholavira-hydraulic-system",
+    "title": {
+      "en": "Dholavira Hydraulic Engineering: Modern Simulation of Ancient Stepwells & Reservoirs",
+      "mr": "धोलावीरा जलअभियांत्रिकी: प्राचीन विहिरी आणि जलसाठ्यांचे आधुनिक सिम्युलेशन"
+    },
+    "type": "Water Heritage & Civil Engineering",
+    "typeMr": "जल वारसा आणि सिव्हिल अभियांत्रिकी",
+    "createdDate": "October 14, 2026",
+    "academicYear": "2025-2026 (Semester VII)",
+    "institution": "VPKBIET Baramati, Dept. of Civil Engineering & IKS Cell",
+    "mentor": "Prof. S. R. Deshpande (Faculty Lead, VPKBIET IKS Cell)",
+    "summary": {
+      "en": "Hydrological CFD modeling of Harappan rock-cut reservoirs and cascade filtration systems from Dholavira, Gujarat, adapted for semi-arid drought mitigation in Maharashtra.",
+      "mr": "धोलावीरा येथील प्राचीन हडप्पाकालीन पाषाण जलसाठे व गाळण प्रणालींचे हायड्रोलॉजिकल CFD मॉडेलिंग, दुष्काळी भागातील जलसंधारणासाठी उपयुक्त."
+    },
+    "info": {
+      "abstract": "The Harappan metropolis of Dholavira (circa 2600–1900 BCE) engineered one of the most sophisticated water harvesting architectures of antiquity. Located on the arid island of Khadir Bet, between two seasonal storm-water channels (Manhar and Mansar), the engineers carved 16 immense cascading reservoirs out of bedrock with interconnecting bunds, stone sluices, and silt traps. This VPKBIET student research reconstructs the hydraulic gradient using ANSYS Fluent and GIS hydrological models to measure sedimentation velocity, water retention capacity, and microclimate moderation. Our prototypes demonstrate how ancient gravity-settling chambers can filter surface turbidity by up to 78% without electrical energy, offering an eco-friendly blueprint for water-stressed regions of rural Maharashtra.",
+      "historicalContext": "Documented in archaeological excavations by Dr. R.S. Bisht (ASI), Dholavira utilized stone check-dams and siltation chambers connected to underground tunnels, keeping the city water-secure through multiple multi-year droughts.",
+      "engineeringMethodology": "1. 3D photogrammetric recreation of the East & South Reservoirs.\n2. Computational Fluid Dynamics (CFD) particle trajectory analysis to simulate silt precipitation.\n3. Scaled physical sand-bed flume testing at VPKBIET Fluid Mechanics Laboratory.",
+      "keyFindings": "The ancient cascade design slows water velocity from 1.8 m/s to 0.22 m/s, dropping 85% of suspended silt before water enters potable storage reservoirs. Low-cost implementation in drought-prone regions like Baramati could conserve up to 1.2 million liters per micro-watershed annually."
+    },
+    "photos": [
+      {
+        "url": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Dholavira Ancient Reservoir System & Rock-cut Stepped Bunds",
+        "alt": "Ancient stone stepped reservoir engineering"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Hydraulic Stepwell (Baoli) Geometric Water Level Access",
+        "alt": "Intricate stepped well architecture"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
+        "caption": "VPKBIET Scaled Fluid Dynamics Prototype & Sedimentation Testing",
+        "alt": "Engineering laboratory test rig and silt trap model"
+      }
+    ],
+    "teamMembers": [
+      {
+        "name": "Viraj Pathak",
+        "role": "Project Lead & CFD Modeler",
+        "department": "Civil & Computational Engineering",
+        "email": "virajpathak@vpkbiet.ac.in"
+      },
+      {
+        "name": "Ananya Kulkarni",
+        "role": "Hydrological Data Analyst",
+        "department": "Civil Engineering",
+        "email": "ananya.k@vpkbiet.ac.in"
+      },
+      {
+        "name": "Rohan Deshmukh",
+        "role": "GIS & Topographical Mapper",
+        "department": "Civil Engineering",
+        "email": "rohan.d@vpkbiet.ac.in"
+      },
+      {
+        "name": "Sneha Joshi",
+        "role": "Material & Water Quality Testing",
+        "department": "Environmental Engineering",
+        "email": "sneha.j@vpkbiet.ac.in"
+      }
+    ],
+    "metrics": [
+      { "label": "Storage Capacity Model", "value": "250,000 m³" },
+      { "label": "Sediment Separation", "value": "78% Passive" },
+      { "label": "Energy Consumption", "value": "0 kWh (Gravity)" },
+      { "label": "Lab Validation", "value": "ANSYS Fluent 24.1" }
+    ],
+    "tags": ["Harappan Engineering", "Dholavira", "Stepwells", "Hydraulics", "Water Conservation", "ANSYS", "VPKBIET"],
+    "badge": "Excellence Award Winner"
+  },
+  {
+    "id": "vedic-cryptographic-multiplier",
+    "title": {
+      "en": "Urdhva-Tiryagbhyam: High-Speed Vedic Multiplier for Quantum-Resistant Cryptography",
+      "mr": "ऊर्ध्वतिर्यग्भ्याम्: क्वांटम-प्रतिरोधी क्रिप्टोग्राफीसाठी हाय-स्पीड वैदिक गुणक"
+    },
+    "type": "Vedic Mathematics & VLSI Hardware",
+    "typeMr": "वैदिक गणित आणि व्हीएलएसआय हार्डवेअर",
+    "createdDate": "August 28, 2026",
+    "academicYear": "2025-2026 (Semester VI)",
+    "institution": "VPKBIET Baramati, Dept. of Electronics & Computer Engineering",
+    "mentor": "Dr. A. P. Mane (Professor, VLSI & Embedded Systems)",
+    "summary": {
+      "en": "FPGA silicon implementation of the ancient Vedic sutra 'Urdhva-Tiryagbhyam' (Vertically and Crosswise) for ultra-low latency modular arithmetic in Elliptic Curve Cryptography.",
+      "mr": "एलिप्सॉइड कर्व्ह क्रिप्टोग्राफीसाठी 'ऊर्ध्वतिर्यग्भ्याम्' सूत्रावर आधारित अल्ट्रा-लो लेटन्सी FPGA वैदिक मल्टिप्लायर चिप."
+    },
+    "info": {
+      "abstract": "High-throughput public key cryptographic algorithms such as RSA-4096 and Post-Quantum Lattice Cryptography spend over 65% of their total execution cycles inside large-integer modular multiplication. Traditional hardware multipliers (Booth, Wallace Tree) incur high propagation delays and ripple-carry overheads. This project harnesses the ancient mathematical sutra 'Urdhva-Tiryagbhyam' (ऊर्ध्वतिर्यग्भ्याम्) derived from the Atharva Veda appendix to synthesize a 64-bit and 128-bit modular multiplier in Verilog HDL. By evaluating partial products concurrently in vertical and crosswise vectors, carry propagation is strictly confined to local bit slices. Synthesized on a Xilinx Artix-7 FPGA, our Vedic multiplier achieved a 32.4% reduction in path delay and 24.8% lower dynamic power dissipation compared to standard Wallace Tree multipliers.",
+      "historicalContext": "Reconstructed systematically by Swami Bharati Krishna Tirtha (1884–1960), the 16 Vedic Sutras provide recursive, parallel algorithms that directly map onto modern distributed and parallel processing architectures.",
+      "engineeringMethodology": "1. Algorithmic formulation of 4x4, 16x16, and 64x64 bit hierarchical Vedic multiplication blocks.\n2. Verilog HDL RTL coding with carry-select adder stages.\n3. Synthesis and behavioral timing simulation on Vivado 2026.2 and verification on FPGA boards at VPKBIET DSP/VLSI Lab.",
+      "keyFindings": "Achieved 2.85 ns critical path latency for 64-bit multiplication at 350 MHz, with zero lookup-table overflow. Confirms ancient algorithmic intuition matches state-of-the-art parallel silicon design."
+    },
+    "photos": [
+      {
+        "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        "caption": "FPGA Silicon Board Testing of 128-bit Vedic Multiplier at VPKBIET",
+        "alt": "Hardware circuit board with microprocessor"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Sanskrit Palm-Leaf Mathematical Manuscript of Sulba Sutras",
+        "alt": "Ancient Sanskrit mathematical palm leaf manuscripts"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Crosswise Parallel Product Generation Logic Diagram",
+        "alt": "Mathematical formulas and algorithmic tree structure"
+      }
+    ],
+    "teamMembers": [
+      {
+        "name": "Viraj Pathak",
+        "role": "Algorithm Architect & Verilog Lead",
+        "department": "Computer / VLSI Engineering",
+        "email": "virajpathak@vpkbiet.ac.in"
+      },
+      {
+        "name": "Aditya Patil",
+        "role": "FPGA Hardware Synthesis",
+        "department": "Electronics & Telecommunication",
+        "email": "aditya.p@vpkbiet.ac.in"
+      },
+      {
+        "name": "Neha Shinde",
+        "role": "Cryptographic Verification & Benchmarks",
+        "department": "Computer Engineering",
+        "email": "neha.s@vpkbiet.ac.in"
+      }
+    ],
+    "metrics": [
+      { "label": "Propagation Delay", "value": "2.85 ns (-32%)" },
+      { "label": "Power Efficiency", "value": "18.2 mW / GHz" },
+      { "label": "Clock Frequency", "value": "350 MHz" },
+      { "label": "Silicon Target", "value": "Xilinx Artix-7" }
+    ],
+    "tags": ["Vedic Maths", "Cryptography", "VLSI", "FPGA", "Urdhva Tiryagbhyam", "Hardware Acceleration", "VPKBIET"],
+    "badge": "National Hackathon Finalist"
+  },
+  {
+    "id": "delhi-iron-pillar-metallurgy",
+    "title": {
+      "en": "Ancient Indian Metallurgy: Corrosion Resistance & Misaka Phase in the Delhi Iron Pillar",
+      "mr": "प्राचीन भारतीय धातुशास्त्र: दिल्लीतील लोहस्तंभाची गंज-प्रतिरोधक क्षमता व मिसाका फेज"
+    },
+    "type": "Metallurgy & Material Science",
+    "typeMr": "धातुशास्त्र आणि पदार्थ विज्ञान",
+    "createdDate": "September 19, 2026",
+    "academicYear": "2025-2026 (Semester VII)",
+    "institution": "VPKBIET Baramati, Dept. of Mechanical Engineering & Metallurgy",
+    "mentor": "Dr. V. B. Gawande (Head, Materials Testing Lab)",
+    "summary": {
+      "en": "Spectroscopic recreation of the iron-phosphorus protective oxide film (Misawite / alpha-FeOOH) found on the 1,600-year-old rustless Delhi Iron Pillar for sustainable modern steel coating.",
+      "mr": "१६०० वर्षे जुन्या दिल्लीच्या लोहस्तंभाच्या गंजरोधक फॉस्फरस-समृद्ध आवरणाचा अभ्यास व आधुनिक स्टीलसाठी पर्यावरणपूरक लेप."
+    },
+    "info": {
+      "abstract": "Erected during the Gupta Empire reign of Chandragupta II Vikramaditya (c. 400 CE), the 7-meter high, 6-ton wrought iron pillar at Mehrauli, Delhi, has withstood over 1,600 years of monsoon weathering without catastrophic oxidation. Metallurgical analysis reveals that ancient Indian blacksmiths employed charcoal-based bloomery hearth smelting without limestone fluxes, leaving a remarkably high phosphorus content (0.25% vs modern <0.05%) in high-purity wrought iron. In this project, VPKBIET mechanical engineering students synthesised lab-scale wrought iron specimens under ancient charcoal-smelted conditions and accelerated electrochemical salt-spray tests. We proved that high phosphorus catalyzes the formation of an adherent, sub-micron passive film of crystalline delta-FeOOH (Misawaite) that blocks oxygen diffusion, self-healing under cyclical humidity.",
+      "historicalContext": "Described in classical texts such as Rasaratnasamuccaya and Arthashastra, ancient Indian metallurgists pioneered crucible Wootz steel (the foundation of Damascus blades) and rust-resistant forge-welding.",
+      "engineeringMethodology": "1. Metallographic polishing and SEM-EDX elemental mapping of forge-welded high-phosphorus iron coupons.\n2. ASTM B117 standard accelerated salt fog chamber exposure for 720 hours.\n3. Formulation of a bio-derived phosphorus-phosphate passive conversion primer for construction rebars.",
+      "keyFindings": "Coated samples exhibited 4.3x higher polarization resistance than commercial mild steel, proving ancient metallurgical methods provide green alternatives to toxic chromium conversion coatings."
+    },
+    "photos": [
+      {
+        "url": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
+        "caption": "The Rustless Delhi Iron Pillar at the Qutb Complex (c. 400 CE)",
+        "alt": "Ancient Iron Pillar of Delhi standing outdoors"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Scanning Electron Microscopy (SEM) Passive Film Analysis at VPKBIET",
+        "alt": "Material science laboratory microscope and analysis"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Traditional Forge-Welding & Bloomery Hearth Recreation",
+        "alt": "Metal glowing with heat during forging"
+      }
+    ],
+    "teamMembers": [
+      {
+        "name": "Tanmay Shinde",
+        "role": "Metallurgy Testing Lead",
+        "department": "Mechanical Engineering",
+        "email": "tanmay.s@vpkbiet.ac.in"
+      },
+      {
+        "name": "Pranav Ghadge",
+        "role": "SEM & Chemical Analyst",
+        "department": "Mechanical Engineering",
+        "email": "pranav.g@vpkbiet.ac.in"
+      },
+      {
+        "name": "Ritu Pawar",
+        "role": "Electrochemical Corrosion Testing",
+        "department": "Chemical & Materials Science",
+        "email": "ritu.p@vpkbiet.ac.in"
+      },
+      {
+        "name": "Viraj Pathak",
+        "role": "IKS Research Lead & Computational Correlation",
+        "department": "VPKBIET IKS Department",
+        "email": "virajpathak@vpkbiet.ac.in"
+      }
+    ],
+    "metrics": [
+      { "label": "Corrosion Resistance", "value": "4.3x vs Mild Steel" },
+      { "label": "Pillar Age Verified", "value": "1,600+ Years" },
+      { "label": "Passive Film Thickness", "value": "50–100 nm" },
+      { "label": "ASTM Fog Test", "value": "Passed 720 Hours" }
+    ],
+    "tags": ["Ancient Metallurgy", "Iron Pillar", "Corrosion Science", "Wootz Steel", "Materials Engineering", "VPKBIET"],
+    "badge": "Best Research Paper Nominee"
+  },
+  {
+    "id": "brihadeeswara-acoustic-resonance",
+    "title": {
+      "en": "Acoustic Resonance & Structural Harmony of the Thanjavur Brihadeeswara Temple",
+      "mr": "तंजावूर बृहदीश्वर मंदिराचे ध्वनी अनुनाद आणि वास्तूशास्त्रीय सुसंवाद"
+    },
+    "type": "Architecture & Acoustic Engineering",
+    "typeMr": "वास्तुकला आणि ध्वनी अभियांत्रिकी",
+    "createdDate": "July 12, 2026",
+    "academicYear": "2025-2026 (Semester V)",
+    "institution": "VPKBIET Baramati, Dept. of Civil & Architectural Engineering",
+    "mentor": "Prof. N. K. Khillare (Structural & Heritage Architecture)",
+    "summary": {
+      "en": "Laser vibrometry and 3D Ray-Tracing acoustic simulations analyzing Vedic musical pillar resonance and sanctum sanctorum low-frequency resonance frequencies.",
+      "mr": "तंजावूर येथील चोलकालीन ग्रॅनाईट मंदिरातील ध्वनी अनुनाद, मंत्रोच्चार कंपने आणि संगीतमय खांबांचे 3D ध्वनी सिम्युलेशन."
+    },
+    "info": {
+      "abstract": "Constructed by Emperor Rajaraja Chola I between 1003 and 1010 CE entirely from interlocking granite without mortar, the Brihadeeswara Temple in Thanjavur is an engineering wonder of load distribution and psychoacoustic design. The sanctum sanctorum (Garbhagriha) is enclosed by double-thickness granite walls that filter external urban vibrations, amplifying human vocal fundamentals during Vedic chanting specifically in the 110–136 Hz band (corresponding to the primordial Om / Shadja tonic). In this interdisciplinary project, VPKBIET student researchers gathered impulse response audio spectra and modeled the Vimana tower using ODEON room acoustics software. We discovered how sculptured granite pillared corridors produce focused modal frequencies while eliminating flutter echoes.",
+      "historicalContext": "Engineered according to the Mayamata and Manasara Vastu Shastras, Chola temple architects harmonized sacred geometry (Manduka Mandala) with acoustic wave reflections.",
+      "engineeringMethodology": "1. High-fidelity acoustic impulse capture using omnidirectional measurement microphones.\n2. 3D geometric finite-element ray-tracing modeling of the sanctum and pillared corridors.\n3. Modal vibration analysis of musical granite pillar columns.",
+      "keyFindings": "Measured reverberation time (RT60) is held stable at 1.8 seconds across 100 Hz to 4 kHz without synthetic acoustic damping, providing an ideal template for modern eco-friendly auditorium and lecture hall design."
+    },
+    "photos": [
+      {
+        "url": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1200&q=80",
+        "caption": "The Majestic Vimana Tower of Brihadeeswara Temple, Thanjavur",
+        "alt": "Brihadeeswara temple towering granite Vimana"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Musical Stone Pillars Resonating at Specific Octaves",
+        "alt": "Intricately carved stone temple columns"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+        "caption": "Acoustic Impulse Waveform & Frequency Spectrogram Analysis",
+        "alt": "Audio sound wave frequency analysis on monitor"
+      }
+    ],
+    "teamMembers": [
+      {
+        "name": "Sakshi Bhosale",
+        "role": "Acoustic Engineer & Ray-Tracing Modeler",
+        "department": "Civil & Architecture",
+        "email": "sakshi.b@vpkbiet.ac.in"
+      },
+      {
+        "name": "Omkar Jagtap",
+        "role": "Signal Processing & Vibrometry",
+        "department": "Electronics Engineering",
+        "email": "omkar.j@vpkbiet.ac.in"
+      },
+      {
+        "name": "Viraj Pathak",
+        "role": "Heritage Systems Researcher",
+        "department": "VPKBIET IKS Cell",
+        "email": "virajpathak@vpkbiet.ac.in"
+      }
+    ],
+    "metrics": [
+      { "label": "Sanctum Resonance", "value": "112 Hz (Om Freq)" },
+      { "label": "RT60 Reverberation", "value": "1.82 Seconds" },
+      { "label": "Granite Mass", "value": "130,000 Tonnes" },
+      { "label": "Structure Type", "value": "Mortar-free Interlocking" }
+    ],
+    "tags": ["Acoustics", "Temple Architecture", "Vastu Shastra", "Granite Geometry", "Brihadeeswara", "VPKBIET"],
+    "badge": "IKS National Conference Selection"
+  }
+]
